@@ -13,13 +13,9 @@ namespace Fighting
         public Hero(int level)
         {
             lv = level;
-            Random r = new Random();
-            this.setMaxHp(level * 100);
+            Random r = new Random(50);
+            this.setMaxHp(level * 200);
             this.setmaxMp(level * 10);
-            this.setHp(level * 100);
-            this.setMp(level * 10);
-            this.setAtk(level * 10 - r.Next(0, 11));
-            this.setAtk(level * 10 - r.Next(5, 11));
         }
         public List<string> getList()
         {
